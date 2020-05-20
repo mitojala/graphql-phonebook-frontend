@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div>
-      <button onCLick={logout} >logout</button>
+      <button onClick={logout} >logout</button>
       <Notify errorMessage={errorMessage} />
       <Persons persons={result.data.allPersons} />
       <PersonForm setError={notify} />
